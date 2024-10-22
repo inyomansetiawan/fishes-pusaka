@@ -32,52 +32,12 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .legends1 {
-            color: #fff5f0;
-        }
-
-        .legends2 {
-            color: #fcbea5;
-        }
-
-        .legends3 {
-            color: #fb7050;
-        }
-
         .legends4 {
-            color: #d32020;
+            color: #ffffcc;
         }
 
         .legends5 {
-            color: #67000d;
-        }
-
-        .legends6 {
-            background-color: #67000d;
-        }
-
-        .legenda1 {
-            color: #e0ffd2;
-        }
-
-        .legenda2 {
-            color: #c9eac2;
-        }
-
-        .legenda3 {
-            color: #7bc77c;
-        }
-
-        .legenda4 {
-            color: #2a924b;
-        }
-
-        .legenda5 {
-            color: #00441b;
-        }
-
-        .legenda6 {
-            background-color: #00441b;
+            color: #253494;
         }
 
         .legendo1 {
@@ -98,10 +58,6 @@
 
         .legendo5 {
             color: #08306b;
-        }
-
-        .legendo6 {
-            background-color: #08306b;
         }
     </style>
 </head>
@@ -138,8 +94,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pemetaan</a>
                         <div class="dropdown-menu m-0">
-                            <a href="#surya" class="dropdown-item">BEI</a>
-                            <a href="#angin" class="dropdown-item">Potensi Ikan</a>
+                            <a href="#bei" class="dropdown-item">BEI</a>
+                            <a href="#peta" class="dropdown-item">Potensi Ikan</a>
                         </div>
                     </div>
                     <a href="#download" class="nav-item nav-link">Download</a>
@@ -617,99 +573,52 @@
             </div>
             <!-- Rekomendasi End -->
 
-            <!-- Potensi Surya Start -->
-            <div id="surya" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- BEI Start -->
+            <div id="bei" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container py-3">
                     <div class="row g-5">
                         <div class="col-lg-6">
-                            <div class="section-title position-relative pb-3 mb-4">
+                            <div class="section-title position-relative pb-3 mb-5">
                                 <h5 class="fw-bold text-primary text-uppercase">PEMETAAN</h5>
-                                <h1 class="mb-0">Potensi Energi Surya</h1>
+                                <h1 class="mb-4">Indeks Ekonomi Biru</h1>
                             </div>
-                            <p class="mb-4"> Kecamatan dengan potensi energi surya yang sangat tinggi didominasi
-                                oleh wilayah di bagian tengah dan selatan Sumatera, yang disebabkan oleh intensitas
-                                radiasi matahari yang lebih tinggi di wilayah ini. Sementara itu, wilayah utara
-                                menunjukkan potensi yang relatif lebih rendah, hal ini karena faktor meteorologis
-                                seperti
-                                peningkatan tutupan awan atau curah hujan yang lebih tinggi. Meskipun demikian,
-                                terdapat beberapa wilayah di Riau yang menunjukkan potensi sangat tinggi.</p>
+                            <p class="mb-5"> Indeks Ekonomi Biru (BEI) berhasil disusun dalam penelitian ini
+                                mengikuti kerangka utama yang disusun oleh Bappenas berdasarkan 11 sub-pilar yang
+                                direduksi menjadi tiga pilar utama: lingkungan (keberlanjutan), ekonomi (nilai tambah),
+                                dan sosial (inklusivitas). Penggunaan analisis komponen utama (PCA) dan agregasi linier
+                                menjadikan penyusunan indeks untuk semua wilayah kabupaten/kota, termasuk yang
+                                non-pesisir dengan indikator proksi. Hasil penghitungan indeks menunjukkan bahwa wilayah
+                                pesisir di Jawa Tengah bagian utara memiliki indeks tertinggi.</p>
                             <div class="row g-0 mb-3">
                                 <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legends5"></i>Sangat Tinggi</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legends4"></i>Tinggi</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legends3"></i>Sedang</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legends2"></i>Rendah</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legends1"></i>Sangat Rendah</h6>
+                                    <h6 class="mb-2"><i class="fa fa-square-full me-3 legends5"></i>Pesisir</h6>
+                                    <h6 class="mb-2"><i class="fa fa-square-full me-3 legends4"></i>Non-Pesisir</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6" style="min-height: 500px;">
                             <div class="position-relative h-100">
-                                <iframe src="maps/surya/index.html" width="100%" height="500px"></iframe>
+                                <iframe src="maps/bei/index.html" width="100%" height="500px"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Potensi Surya End -->
+            <!-- BEI End -->
 
-            <!-- Potensi Angin Start -->
-            <div id="angin" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- Potensi Ikan Start -->
+            <div id="peta" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container py-3">
                     <div class="row g-5">
                         <div class="col-lg-6">
                             <div class="section-title position-relative pb-3 mb-4">
                                 <h5 class="fw-bold text-primary text-uppercase">PEMETAAN</h5>
-                                <h1 class="mb-0">Potensi Energi Angin</h1>
+                                <h1 class="mb-0">Potensi Produk Perikanan</h1>
                             </div>
-                            <p class="mb-4"> Potensi pengembangan energi angin
-                                menunjukkan hasil yang bagus pada wilayah sumatera bagian tenggara. Selain itu, di
-                                wilayah ujung utara juga memperlihatkan potensi pengembangan yang baik.
-                                Area pesisir Sumatera, terutama di bagian barat dan timur, menunjukkan potensi
-                                energi angin yang tinggi hingga sangat tinggi. Meskipun tidak terlihat secara
-                                eksplisit,
-                                wilayah
-                                yang berada di dekat
-                                pegunungan Bukit Barisan juga cenderung memiliki potensi angin yang signifikan. </p>
-                            <div class="row g-0 mb-3">
-                                <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legenda5"></i>Sangat Tinggi</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legenda4"></i>Tinggi</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legenda3"></i>Sedang</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legenda2"></i>Rendah</h6>
-                                    <h6 class="mb-2"><i class="fa fa-square me-3 legenda1"></i>Sangat Rendah</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6" style="min-height: 500px;">
-                            <div class="position-relative h-100">
-                                <iframe src="maps/angin/index.html" width="100%" height="500px"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Potensi Angin End -->
-
-            <!-- Potensi Ombak Start -->
-            <div id="ombak" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container py-3">
-                    <div class="row g-5">
-                        <div class="col-lg-6">
-                            <div class="section-title position-relative pb-3 mb-4">
-                                <h5 class="fw-bold text-primary text-uppercase">PEMETAAN</h5>
-                                <h1 class="mb-0">Potensi Energi Ombak</h1>
-                            </div>
-                            <p class="mb-4"> Berdasarkan peta yang menunjukkan potensi energi ombak di Pulau
-                                Sumatera,
-                                terlihat bahwa wilayah pesisir barat Sumatera memiliki potensi energi ombak yang
-                                sangat
-                                tinggi. Daerah-daerah ini, termasuk bagian barat dari Aceh, Sumatera Barat, dan
-                                Bengkulu, ditandai dengan warna yang lebih gelap. Sementara itu, potensi energi
-                                ombak
-                                menurun di
-                                daerah
-                                pesisir timur dan tengah pulau.</p>
+                            <p class="mb-4"> Pemetaan dilakukan menggunakan Rule-Based Classification dan data
+                                penginderaan jauh yang membagi seluruh wilayah perairan menjadi grid 1x1 km. Wilayah
+                                perairan dangkal di utara Jawa Tengah menunjukkan potensi terbesar untuk perikanan,
+                                terutama ikan demersal, yang lebih mudah diakses nelayan.</p>
                             <div class="row g-0 mb-3">
                                 <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                                     <h6 class="mb-2"><i class="fa fa-square me-3 legendo5"></i>Sangat Tinggi</h6>
@@ -722,77 +631,31 @@
                         </div>
                         <div class="col-lg-6" style="min-height: 500px;">
                             <div class="position-relative h-100">
-                                <iframe src="maps/ombak/index.html" width="100%" height="500px"></iframe>
+                                <iframe src="maps/peta/index.html" width="100%" height="500px"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Potensi Ombak End -->
-
-            <!-- Hybrid Energy Start -->
-            <div id="hybrid" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container py-3">
-                    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"
-                        style="max-width: 600px;">
-                        <h5 class="fw-bold text-primary text-uppercase">PEMETAAN</h5>
-                        <h1 class="mb-0">Potensi Hybrid Energy</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-lg-8  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-                            <div class="position-relative h-100">
-                                <iframe src="maps/hybrid/index.html" width="100%" height="500px"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="row g-5">
-                                <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                                    <div class="rounded d-flex align-items-center justify-content-center mb-3 legends6"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-sun text-white"></i>
-                                    </div>
-                                    <h4>Klaster 1</h4>
-                                    <p class="mb-0"> Potensi Energi Surya yang Tinggi</p>
-                                </div>
-                                <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                                    <div class="rounded d-flex align-items-center justify-content-center mb-3 legenda6"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-wind text-white"></i>
-                                    </div>
-                                    <h4>Klaster 2</h4>
-                                    <p class="mb-0"> Potensi Energi Angin yang Tinggi</p>
-                                </div>
-                                <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                                    <div class="rounded d-flex align-items-center justify-content-center mb-3 legendo6"
-                                        style="width: 55px; height: 55px;">
-                                        <i class="fa fa-water text-white"></i>
-                                    </div>
-                                    <h4>Klaster 3</h4>
-                                    <p class="mb-0"> Potensi Energi Ombak yang Tinggi</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hybrid Energy Start -->
+            <!-- Potensi Ikan End -->
 
             <!-- Download Hasil Start -->
             <div id="download" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container py-5">
                     <div class="row g-5">
-                        <div class="col-lg-6">
+                        <div class="col-lg-7">
                             <div class="section-title position-relative pb-3 mb-5">
                                 <h5 class="fw-bold text-primary text-uppercase">HASIL PENELITIAN</h5>
-                                <h1 class="mb-0">Dari Potensi Menuju Realisasi: Energi Hijau sebagai Pilar Ketahanan
-                                    Ekonomi Sumatera</h1>
+                                <h1 class="mb-5">Strategi dan Pengembangan Sektor Perikanan untuk Mendukung Agenda
+                                    Ekonomi Biru yang Berkelanjutan
+                                </h1>
                             </div>
-                            <a href="https://drive.google.com/file/d/1_tRtw7Wy0ItkLlc8F_FyiUYwhegSEz6e/view?usp=sharing"
+                            <a href="https://drive.google.com/file/d/13mG582CjPGcqLbeBxUupjD1nzZgkN7Mf/view?usp=sharing"
                                 class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s"
                                 target="_blank">BACA HASIL PENELITIAN</a>
 
                         </div>
-                        <div class="col-lg-6" style="min-height: 500px;">
+                        <div class="col-lg-5" style="min-height: 500px;">
                             <div class="position-relative h-100">
                                 <img class="position-absolute w-100 h-150 rounded wow zoomIn" data-wow-delay="0.9s"
                                     src="img/research.png" style="object-fit: cover;">
