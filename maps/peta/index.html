@@ -104,50 +104,6 @@
                 mouseover: highlightFeature,
             });
             var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">PROVNO</th>\
-                        <td class="visible-with-data" id="PROVNO">' + (feature.properties['PROVNO'] !== null ? autolinker.link(feature.properties['PROVNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KABKOTNO</th>\
-                        <td class="visible-with-data" id="KABKOTNO">' + (feature.properties['KABKOTNO'] !== null ? autolinker.link(feature.properties['KABKOTNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KECNO</th>\
-                        <td class="visible-with-data" id="KECNO">' + (feature.properties['KECNO'] !== null ? autolinker.link(feature.properties['KECNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">DESANO</th>\
-                        <td class="visible-with-data" id="DESANO">' + (feature.properties['DESANO'] !== null ? autolinker.link(feature.properties['DESANO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">PROVINSI</th>\
-                        <td class="visible-with-data" id="PROVINSI">' + (feature.properties['PROVINSI'] !== null ? autolinker.link(feature.properties['PROVINSI'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KABKOT</th>\
-                        <td class="visible-with-data" id="KABKOT">' + (feature.properties['KABKOT'] !== null ? autolinker.link(feature.properties['KABKOT'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KECAMATAN</th>\
-                        <td class="visible-with-data" id="KECAMATAN">' + (feature.properties['KECAMATAN'] !== null ? autolinker.link(feature.properties['KECAMATAN'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">DESA</th>\
-                        <td class="visible-with-data" id="DESA">' + (feature.properties['DESA'] !== null ? autolinker.link(feature.properties['DESA'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">IDDESA</th>\
-                        <td class="visible-with-data" id="IDDESA">' + (feature.properties['IDDESA'] !== null ? autolinker.link(feature.properties['IDDESA'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">TAHUN</th>\
-                        <td class="visible-with-data" id="TAHUN">' + (feature.properties['TAHUN'] !== null ? autolinker.link(feature.properties['TAHUN'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">SUMBER</th>\
-                        <td class="visible-with-data" id="SUMBER">' + (feature.properties['SUMBER'] !== null ? autolinker.link(feature.properties['SUMBER'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -168,7 +124,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(229,229,229,1.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_central_java_land_0');
@@ -176,7 +132,7 @@
         map.getPane('pane_central_java_land_0').style['mix-blend-mode'] = 'normal';
         var layer_central_java_land_0 = new L.geoJson(json_central_java_land_0, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_central_java_land_0',
             layerName: 'layer_central_java_land_0',
             pane: 'pane_central_java_land_0',
@@ -197,54 +153,6 @@
                 mouseover: highlightFeature,
             });
             var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">PROVNO</th>\
-                        <td class="visible-with-data" id="PROVNO">' + (feature.properties['PROVNO'] !== null ? autolinker.link(feature.properties['PROVNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KABKOTNO</th>\
-                        <td class="visible-with-data" id="KABKOTNO">' + (feature.properties['KABKOTNO'] !== null ? autolinker.link(feature.properties['KABKOTNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KECNO</th>\
-                        <td class="visible-with-data" id="KECNO">' + (feature.properties['KECNO'] !== null ? autolinker.link(feature.properties['KECNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">DESANO</th>\
-                        <td class="visible-with-data" id="DESANO">' + (feature.properties['DESANO'] !== null ? autolinker.link(feature.properties['DESANO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">PROVINSI</th>\
-                        <td class="visible-with-data" id="PROVINSI">' + (feature.properties['PROVINSI'] !== null ? autolinker.link(feature.properties['PROVINSI'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KABKOT</th>\
-                        <td class="visible-with-data" id="KABKOT">' + (feature.properties['KABKOT'] !== null ? autolinker.link(feature.properties['KABKOT'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">KECAMATAN</th>\
-                        <td class="visible-with-data" id="KECAMATAN">' + (feature.properties['KECAMATAN'] !== null ? autolinker.link(feature.properties['KECAMATAN'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">DESA</th>\
-                        <td class="visible-with-data" id="DESA">' + (feature.properties['DESA'] !== null ? autolinker.link(feature.properties['DESA'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">IDDESA</th>\
-                        <td class="visible-with-data" id="IDDESA">' + (feature.properties['IDDESA'] !== null ? autolinker.link(feature.properties['IDDESA'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">TAHUN</th>\
-                        <td class="visible-with-data" id="TAHUN">' + (feature.properties['TAHUN'] !== null ? autolinker.link(feature.properties['TAHUN'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">SUMBER</th>\
-                        <td>' + (feature.properties['SUMBER'] !== null ? autolinker.link(feature.properties['SUMBER'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">ID</th>\
-                        <td class="visible-with-data" id="ID">' + (feature.properties['ID'] !== null ? autolinker.link(feature.properties['ID'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -265,7 +173,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(252,252,164,1.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_central_java_district_land_1');
@@ -273,7 +181,7 @@
         map.getPane('pane_central_java_district_land_1').style['mix-blend-mode'] = 'normal';
         var layer_central_java_district_land_1 = new L.geoJson(json_central_java_district_land_1, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_central_java_district_land_1',
             layerName: 'layer_central_java_district_land_1',
             pane: 'pane_central_java_district_land_1',
@@ -295,360 +203,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Alu Alu</th>\
-                        <td class="visible-with-data" id="Alu Alu">' + (feature.properties['Alu Alu'] !== null ? autolinker.link(feature.properties['Alu Alu'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Potensi</strong><br />' + (feature.properties['Potensi'] !== null ? autolinker.link(feature.properties['Potensi'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Ayam Ayam</th>\
-                        <td class="visible-with-data" id="Ayam Ayam">' + (feature.properties['Ayam Ayam'] !== null ? autolinker.link(feature.properties['Ayam Ayam'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Bandeng</th>\
-                        <td class="visible-with-data" id="Bandeng">' + (feature.properties['Bandeng'] !== null ? autolinker.link(feature.properties['Bandeng'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Baronang</th>\
-                        <td class="visible-with-data" id="Baronang">' + (feature.properties['Baronang'] !== null ? autolinker.link(feature.properties['Baronang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Bawal</th>\
-                        <td class="visible-with-data" id="Bawal">' + (feature.properties['Bawal'] !== null ? autolinker.link(feature.properties['Bawal'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Bayeman</th>\
-                        <td class="visible-with-data" id="Bayeman">' + (feature.properties['Bayeman'] !== null ? autolinker.link(feature.properties['Bayeman'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Belanak</th>\
-                        <td class="visible-with-data" id="Belanak">' + (feature.properties['Belanak'] !== null ? autolinker.link(feature.properties['Belanak'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Beloso</th>\
-                        <td class="visible-with-data" id="Beloso">' + (feature.properties['Beloso'] !== null ? autolinker.link(feature.properties['Beloso'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Betok</th>\
-                        <td class="visible-with-data" id="Betok">' + (feature.properties['Betok'] !== null ? autolinker.link(feature.properties['Betok'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Betok Laut</th>\
-                        <td class="visible-with-data" id="Betok Laut">' + (feature.properties['Betok Laut'] !== null ? autolinker.link(feature.properties['Betok Laut'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Betutu</th>\
-                        <td class="visible-with-data" id="Betutu">' + (feature.properties['Betutu'] !== null ? autolinker.link(feature.properties['Betutu'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Biji Nangka</th>\
-                        <td class="visible-with-data" id="Biji Nangka">' + (feature.properties['Biji Nangka'] !== null ? autolinker.link(feature.properties['Biji Nangka'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Biliss</th>\
-                        <td class="visible-with-data" id="Biliss">' + (feature.properties['Biliss'] !== null ? autolinker.link(feature.properties['Biliss'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Bulan</th>\
-                        <td class="visible-with-data" id="Bulan">' + (feature.properties['Bulan'] !== null ? autolinker.link(feature.properties['Bulan'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Cakalang</th>\
-                        <td class="visible-with-data" id="Cakalang">' + (feature.properties['Cakalang'] !== null ? autolinker.link(feature.properties['Cakalang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Cumi Cumi</th>\
-                        <td class="visible-with-data" id="Cumi Cumi">' + (feature.properties['Cumi Cumi'] !== null ? autolinker.link(feature.properties['Cumi Cumi'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Demersal</th>\
-                        <td class="visible-with-data" id="Demersal">' + (feature.properties['Demersal'] !== null ? autolinker.link(feature.properties['Demersal'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Ekor Kuning</th>\
-                        <td class="visible-with-data" id="Ekor Kuning">' + (feature.properties['Ekor Kuning'] !== null ? autolinker.link(feature.properties['Ekor Kuning'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Gabus</th>\
-                        <td class="visible-with-data" id="Gabus">' + (feature.properties['Gabus'] !== null ? autolinker.link(feature.properties['Gabus'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Gerot Gerot</th>\
-                        <td class="visible-with-data" id="Gerot Gerot">' + (feature.properties['Gerot Gerot'] !== null ? autolinker.link(feature.properties['Gerot Gerot'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Gindara</th>\
-                        <td class="visible-with-data" id="Gindara">' + (feature.properties['Gindara'] !== null ? autolinker.link(feature.properties['Gindara'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Golok Golok</th>\
-                        <td class="visible-with-data" id="Golok Golok">' + (feature.properties['Golok Golok'] !== null ? autolinker.link(feature.properties['Golok Golok'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Gulamah</th>\
-                        <td class="visible-with-data" id="Gulamah">' + (feature.properties['Gulamah'] !== null ? autolinker.link(feature.properties['Gulamah'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Gurita</th>\
-                        <td class="visible-with-data" id="Gurita">' + (feature.properties['Gurita'] !== null ? autolinker.link(feature.properties['Gurita'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Haring</th>\
-                        <td class="visible-with-data" id="Haring">' + (feature.properties['Haring'] !== null ? autolinker.link(feature.properties['Haring'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Julung Julung</th>\
-                        <td class="visible-with-data" id="Julung Julung">' + (feature.properties['Julung Julung'] !== null ? autolinker.link(feature.properties['Julung Julung'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kaci Kaci</th>\
-                        <td class="visible-with-data" id="Kaci Kaci">' + (feature.properties['Kaci Kaci'] !== null ? autolinker.link(feature.properties['Kaci Kaci'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kakap</th>\
-                        <td class="visible-with-data" id="Kakap">' + (feature.properties['Kakap'] !== null ? autolinker.link(feature.properties['Kakap'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kakatua</th>\
-                        <td class="visible-with-data" id="Kakatua">' + (feature.properties['Kakatua'] !== null ? autolinker.link(feature.properties['Kakatua'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kapas Kapas</th>\
-                        <td class="visible-with-data" id="Kapas Kapas">' + (feature.properties['Kapas Kapas'] !== null ? autolinker.link(feature.properties['Kapas Kapas'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kembung</th>\
-                        <td class="visible-with-data" id="Kembung">' + (feature.properties['Kembung'] !== null ? autolinker.link(feature.properties['Kembung'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kenyar</th>\
-                        <td class="visible-with-data" id="Kenyar">' + (feature.properties['Kenyar'] !== null ? autolinker.link(feature.properties['Kenyar'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kepiting</th>\
-                        <td class="visible-with-data" id="Kepiting">' + (feature.properties['Kepiting'] !== null ? autolinker.link(feature.properties['Kepiting'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kerang</th>\
-                        <td class="visible-with-data" id="Kerang">' + (feature.properties['Kerang'] !== null ? autolinker.link(feature.properties['Kerang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kerapu</th>\
-                        <td class="visible-with-data" id="Kerapu">' + (feature.properties['Kerapu'] !== null ? autolinker.link(feature.properties['Kerapu'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kerong Kerong</th>\
-                        <td class="visible-with-data" id="Kerong Kerong">' + (feature.properties['Kerong Kerong'] !== null ? autolinker.link(feature.properties['Kerong Kerong'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kerot Kerot</th>\
-                        <td class="visible-with-data" id="Kerot Kerot">' + (feature.properties['Kerot Kerot'] !== null ? autolinker.link(feature.properties['Kerot Kerot'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Koi</th>\
-                        <td class="visible-with-data" id="Koi">' + (feature.properties['Koi'] !== null ? autolinker.link(feature.properties['Koi'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kurisi</th>\
-                        <td class="visible-with-data" id="Kurisi">' + (feature.properties['Kurisi'] !== null ? autolinker.link(feature.properties['Kurisi'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kuro</th>\
-                        <td class="visible-with-data" id="Kuro">' + (feature.properties['Kuro'] !== null ? autolinker.link(feature.properties['Kuro'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Kuwe</th>\
-                        <td class="visible-with-data" id="Kuwe">' + (feature.properties['Kuwe'] !== null ? autolinker.link(feature.properties['Kuwe'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Layang</th>\
-                        <td class="visible-with-data" id="Layang">' + (feature.properties['Layang'] !== null ? autolinker.link(feature.properties['Layang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Layaran</th>\
-                        <td class="visible-with-data" id="Layaran">' + (feature.properties['Layaran'] !== null ? autolinker.link(feature.properties['Layaran'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Layur</th>\
-                        <td class="visible-with-data" id="Layur">' + (feature.properties['Layur'] !== null ? autolinker.link(feature.properties['Layur'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Lemadang</th>\
-                        <td class="visible-with-data" id="Lemadang">' + (feature.properties['Lemadang'] !== null ? autolinker.link(feature.properties['Lemadang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Lemuru</th>\
-                        <td class="visible-with-data" id="Lemuru">' + (feature.properties['Lemuru'] !== null ? autolinker.link(feature.properties['Lemuru'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Lencam</th>\
-                        <td class="visible-with-data" id="Lencam">' + (feature.properties['Lencam'] !== null ? autolinker.link(feature.properties['Lencam'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Lidah</th>\
-                        <td class="visible-with-data" id="Lidah">' + (feature.properties['Lidah'] !== null ? autolinker.link(feature.properties['Lidah'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Lobster</th>\
-                        <td class="visible-with-data" id="Lobster">' + (feature.properties['Lobster'] !== null ? autolinker.link(feature.properties['Lobster'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Makarel</th>\
-                        <td class="visible-with-data" id="Makarel">' + (feature.properties['Makarel'] !== null ? autolinker.link(feature.properties['Makarel'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Manfish</th>\
-                        <td class="visible-with-data" id="Manfish">' + (feature.properties['Manfish'] !== null ? autolinker.link(feature.properties['Manfish'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Manyung</th>\
-                        <td class="visible-with-data" id="Manyung">' + (feature.properties['Manyung'] !== null ? autolinker.link(feature.properties['Manyung'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Marlin</th>\
-                        <td class="visible-with-data" id="Marlin">' + (feature.properties['Marlin'] !== null ? autolinker.link(feature.properties['Marlin'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Mujair</th>\
-                        <td class="visible-with-data" id="Mujair">' + (feature.properties['Mujair'] !== null ? autolinker.link(feature.properties['Mujair'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Nyunglas</th>\
-                        <td class="visible-with-data" id="Nyunglas">' + (feature.properties['Nyunglas'] !== null ? autolinker.link(feature.properties['Nyunglas'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Pangkah</th>\
-                        <td class="visible-with-data" id="Pangkah">' + (feature.properties['Pangkah'] !== null ? autolinker.link(feature.properties['Pangkah'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Pari</th>\
-                        <td class="visible-with-data" id="Pari">' + (feature.properties['Pari'] !== null ? autolinker.link(feature.properties['Pari'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Pasir Pasir</th>\
-                        <td class="visible-with-data" id="Pasir Pasir">' + (feature.properties['Pasir Pasir'] !== null ? autolinker.link(feature.properties['Pasir Pasir'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Patin</th>\
-                        <td class="visible-with-data" id="Patin">' + (feature.properties['Patin'] !== null ? autolinker.link(feature.properties['Patin'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Pedang</th>\
-                        <td class="visible-with-data" id="Pedang">' + (feature.properties['Pedang'] !== null ? autolinker.link(feature.properties['Pedang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Peperek</th>\
-                        <td class="visible-with-data" id="Peperek">' + (feature.properties['Peperek'] !== null ? autolinker.link(feature.properties['Peperek'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Pisang Pisang</th>\
-                        <td class="visible-with-data" id="Pisang Pisang">' + (feature.properties['Pisang Pisang'] !== null ? autolinker.link(feature.properties['Pisang Pisang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Rajungan</th>\
-                        <td class="visible-with-data" id="Rajungan">' + (feature.properties['Rajungan'] !== null ? autolinker.link(feature.properties['Rajungan'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Rejung</th>\
-                        <td class="visible-with-data" id="Rejung">' + (feature.properties['Rejung'] !== null ? autolinker.link(feature.properties['Rejung'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Remang</th>\
-                        <td class="visible-with-data" id="Remang">' + (feature.properties['Remang'] !== null ? autolinker.link(feature.properties['Remang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Sarden</th>\
-                        <td class="visible-with-data" id="Sarden">' + (feature.properties['Sarden'] !== null ? autolinker.link(feature.properties['Sarden'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Sebelah</th>\
-                        <td class="visible-with-data" id="Sebelah">' + (feature.properties['Sebelah'] !== null ? autolinker.link(feature.properties['Sebelah'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Selar</th>\
-                        <td class="visible-with-data" id="Selar">' + (feature.properties['Selar'] !== null ? autolinker.link(feature.properties['Selar'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Semar</th>\
-                        <td class="visible-with-data" id="Semar">' + (feature.properties['Semar'] !== null ? autolinker.link(feature.properties['Semar'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Sembilang</th>\
-                        <td class="visible-with-data" id="Sembilang">' + (feature.properties['Sembilang'] !== null ? autolinker.link(feature.properties['Sembilang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Serinding</th>\
-                        <td class="visible-with-data" id="Serinding">' + (feature.properties['Serinding'] !== null ? autolinker.link(feature.properties['Serinding'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Sidat</th>\
-                        <td class="visible-with-data" id="Sidat">' + (feature.properties['Sidat'] !== null ? autolinker.link(feature.properties['Sidat'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Siput</th>\
-                        <td class="visible-with-data" id="Siput">' + (feature.properties['Siput'] !== null ? autolinker.link(feature.properties['Siput'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Sotong</th>\
-                        <td class="visible-with-data" id="Sotong">' + (feature.properties['Sotong'] !== null ? autolinker.link(feature.properties['Sotong'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Sunglir</th>\
-                        <td class="visible-with-data" id="Sunglir">' + (feature.properties['Sunglir'] !== null ? autolinker.link(feature.properties['Sunglir'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Swanggi</th>\
-                        <td class="visible-with-data" id="Swanggi">' + (feature.properties['Swanggi'] !== null ? autolinker.link(feature.properties['Swanggi'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Talang Talang</th>\
-                        <td class="visible-with-data" id="Talang Talang">' + (feature.properties['Talang Talang'] !== null ? autolinker.link(feature.properties['Talang Talang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tardore</th>\
-                        <td class="visible-with-data" id="Tardore">' + (feature.properties['Tardore'] !== null ? autolinker.link(feature.properties['Tardore'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tawes</th>\
-                        <td class="visible-with-data" id="Tawes">' + (feature.properties['Tawes'] !== null ? autolinker.link(feature.properties['Tawes'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tenggiri</th>\
-                        <td class="visible-with-data" id="Tenggiri">' + (feature.properties['Tenggiri'] !== null ? autolinker.link(feature.properties['Tenggiri'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Terbang</th>\
-                        <td class="visible-with-data" id="Terbang">' + (feature.properties['Terbang'] !== null ? autolinker.link(feature.properties['Terbang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Teri</th>\
-                        <td class="visible-with-data" id="Teri">' + (feature.properties['Teri'] !== null ? autolinker.link(feature.properties['Teri'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Teripang</th>\
-                        <td class="visible-with-data" id="Teripang">' + (feature.properties['Teripang'] !== null ? autolinker.link(feature.properties['Teripang'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Terubuk</th>\
-                        <td class="visible-with-data" id="Terubuk">' + (feature.properties['Terubuk'] !== null ? autolinker.link(feature.properties['Terubuk'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tiram</th>\
-                        <td class="visible-with-data" id="Tiram">' + (feature.properties['Tiram'] !== null ? autolinker.link(feature.properties['Tiram'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tongkol</th>\
-                        <td class="visible-with-data" id="Tongkol">' + (feature.properties['Tongkol'] !== null ? autolinker.link(feature.properties['Tongkol'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Tuna</th>\
-                        <td class="visible-with-data" id="Tuna">' + (feature.properties['Tuna'] !== null ? autolinker.link(feature.properties['Tuna'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Ubur Ubur</th>\
-                        <td class="visible-with-data" id="Ubur Ubur">' + (feature.properties['Ubur Ubur'] !== null ? autolinker.link(feature.properties['Ubur Ubur'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">Udang</th>\
-                        <td class="visible-with-data" id="Udang">' + (feature.properties['Udang'] !== null ? autolinker.link(feature.properties['Udang'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Jumlah</strong><br />' + (feature.properties['Jumlah'] !== null ? autolinker.link(feature.properties['Jumlah'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
